@@ -8,3 +8,11 @@ At first you can try to use the DHT sensor without wifi features and just get th
 After this you can use the `simple-server/`
 
 ![Demo](demo.png)
+
+![Sketch](sketch.png)
+
+You will need:
+* A DHT sensor
+* A resistor of 4Ω7
+* A ESP-8266
+* Some jumping wire
