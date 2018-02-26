@@ -51,5 +51,5 @@ void loop() {
       http.end();
     }
   }
-  delay(5000);
+  ESP.deepSleep(120000000); 
 }
