@@ -11,8 +11,8 @@ DHT dht(DHTPIN, DHTTYPE);
 
 ESP8266WebServer server ( 80 );
 
-const char *ssid = "claire";
-const char *password = "26afaf2004";
+const char *ssid = "wifi_name";
+const char *password = "wifi_pwd";
 
 void handleRoot() {
   char html[500];
@@ -102,6 +102,7 @@ void handleNotFound() {
 void setup ( void ) {
   Serial.begin (9600);
   WiFi.begin ( ssid, password );
+  WiFi.mode(WIFI_STA);
   dht.begin();
   Serial.println ( "" );
 
